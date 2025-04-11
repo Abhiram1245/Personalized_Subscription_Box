@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
   return (
     <div
       style={{
@@ -8,14 +11,11 @@ const Dashboard = () => {
         justifyContent: 'center',
         alignItems: 'center',
         minHeight: '100vh',
-        backgroundImage: 'url("https://t4.ftcdn.net/jpg/01/90/51/83/360_F_190518339_hKoobCcAYeiwi9DsOPZzKbKBo4ZLrrUP.jpg")',
-        backgroundSize: 'cover', // Ensure the image covers the entire screen
-        backgroundPosition: 'center', // Center the background image
-        backgroundRepeat: 'no-repeat', // Prevent the image from repeating
+        background: 'linear-gradient(to right, #f0f2f5, #d9e2ec)',
         fontFamily: "'Arial', sans-serif",
-        position: 'relative', // To position elements absolutely
+        position: 'relative',
         padding: '20px',
-        flexDirection: 'column', // Align elements vertically
+        flexDirection: 'column',
         textAlign: 'center',
       }}
     >
@@ -27,8 +27,8 @@ const Dashboard = () => {
           position: 'absolute',
           top: '20px',
           right: '20px',
-          width: '300px', // Adjusted size
-          height: '300px', // Adjusted size
+          width: '250px',
+          height: '250px',
           objectFit: 'contain',
         }}
       />
@@ -41,46 +41,42 @@ const Dashboard = () => {
           position: 'absolute',
           bottom: '20px',
           left: '20px',
-          width: '250px', // Adjusted size
-          height: '300px', // Adjusted size
+          width: '220px',
+          height: '260px',
           objectFit: 'contain',
-          transform: 'scaleX(-1)', // Mirrors the image horizontally
+          transform: 'scaleX(-1)',
         }}
       />
-
-      {/* Styled heading */}
+      
       <h1
         style={{
-          fontSize: '35px', // Smaller font size for "Welcome to"
-          fontWeight: 'bold', // Bold text
-          color: 'red', // Thick black text color
-          textAlign: 'center',
-          textShadow: `2px 2px 4px #B0B0B0,  /* Ash shadow */`,
+          fontSize: '35px',
+          fontWeight: 'bold',
+          color: '#444',
+          textShadow: '1px 1px 2px #ccc',
         }}
       >
         Welcome to
       </h1>
-      
+
       <h2
         style={{
-          fontSize: '60px', // Larger font size for the main text
+          fontSize: '50px',
           fontWeight: 'bold',
-          color: '6657DF', // Thick black text color
-          textAlign: 'center',
-          textShadow: `2px 2px 4px #B0B0B0,  /* Ash shadow */`,
+          color: '#4B3F72',
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
         }}
       >
-        PERSONALISED SUBSCRIPTION BOX GENERATOR
+        PERSONALIZED SUBSCRIPTION BOX GENERATOR
       </h2>
 
-      {/* Subheading */}
       <p
         style={{
           fontSize: '18px',
-          color: 'blue', // Thick black text color
+          color: '#2c3e50',
           marginTop: '10px',
           marginBottom: '30px',
-          textShadow: `2px 2px 4px #B0B0B0,  /* Ash shadow */`,
+          textShadow: '1px 1px 2px #eee',
         }}
       >
         <b><i>Explore and manage your subscription options</i></b>
@@ -89,37 +85,37 @@ const Dashboard = () => {
       {/* Buttons */}
       <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
         <button
-          onClick={() => alert('Sign Up button clicked')}
+          onClick={() => navigate('/login')}
           style={{
-            padding: '10px 20px',
+            padding: '12px 24px',
             fontSize: '16px',
             border: 'none',
-            backgroundColor: '#007bff', // Blue color
+            backgroundColor: '#1D4ED8',
             color: '#fff',
-            borderRadius: '30px', // Rounded shape for bubbly look
+            borderRadius: '30px',
             cursor: 'pointer',
-            transition: 'all 0.3s ease',
+            transition: 'background-color 0.3s ease',
           }}
-          onMouseOver={(e) => (e.target.style.backgroundColor = '#0056b3')}
-          onMouseOut={(e) => (e.target.style.backgroundColor = '#007bff')}
+          onMouseOver={(e) => (e.target.style.backgroundColor = '#1E40AF')}
+          onMouseOut={(e) => (e.target.style.backgroundColor = '#1D4ED8')}
         >
           Sign Up →
         </button>
 
         <button
-          onClick={() => alert('Get Started button clicked')}
+          onClick={() => navigate('/books-entertainment')}
           style={{
-            padding: '10px 20px',
+            padding: '12px 24px',
             fontSize: '16px',
-            backgroundColor: '#333',
+            backgroundColor: '#10B981',
             color: '#fff',
             border: 'none',
-            borderRadius: '30px', // Rounded shape for bubbly look
+            borderRadius: '30px',
             cursor: 'pointer',
-            transition: 'all 0.3s ease',
+            transition: 'background-color 0.3s ease',
           }}
-          onMouseOver={(e) => (e.target.style.backgroundColor = '#555')}
-          onMouseOut={(e) => (e.target.style.backgroundColor = '#333')}
+          onMouseOver={(e) => (e.target.style.backgroundColor = '#059669')}
+          onMouseOut={(e) => (e.target.style.backgroundColor = '#10B981')}
         >
           Get Started
         </button>

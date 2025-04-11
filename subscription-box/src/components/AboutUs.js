@@ -5,13 +5,13 @@ const AboutUs = () => {
     // Container style for content, centered on the page with space above
     container: {
       maxWidth: '1200px',
-      margin: '150px auto', // Adds space at the top and centers the container horizontally
+      margin: '150px auto',
       padding: '20px',
       backgroundColor: 'white',
       borderRadius: '10px',
       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-      position: 'relative', // Ensure the content is above the background
-      zIndex: 1, // Ensure the container appears above the background
+      position: 'relative',
+      zIndex: 1,
     },
     content: {
       display: 'flex',
@@ -28,7 +28,7 @@ const AboutUs = () => {
       fontSize: '36px',
       fontWeight: 'bold',
       color: '#2c2c54',
-      marginBottom: '20px', // Reduced gap below the heading
+      marginBottom: '20px',
     },
     text: {
       fontSize: '16px',
@@ -56,18 +56,15 @@ const AboutUs = () => {
     buttonHover: {
       backgroundColor: '#305a91',
     },
-    // Background style
+    // Background style with soft gradient
     background: {
-      position: 'fixed', // Fixed background to ensure it stays in place
+      position: 'fixed',
       top: 0,
       left: 0,
       width: '100%',
-      height: '100vh', // Full viewport height
-      backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/053/886/592/non_2x/yellow-ball-with-a-hole-in-the-middle-the-yellow-color-of-the-ball-and-the-yellow-background-create-a-warm-and-inviting-mood-the-ball-s-shape-and-the-hole-in-the-middle-give-it-a-unique-free-photo.jpg")',
-      backgroundSize: 'cover', // Ensure the image covers the entire screen
-      backgroundPosition: 'top center', // Position the background to show the top part
-      backgroundRepeat: 'no-repeat', // Prevent the image from repeating
-      zIndex: -1, // Ensure the background stays behind content
+      height: '100vh',
+      background: 'linear-gradient(to right, #f0f2f5, #d9e2ec)', // Match Dashboard gradient
+      zIndex: -1,
     },
   };
 

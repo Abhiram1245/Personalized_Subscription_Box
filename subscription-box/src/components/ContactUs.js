@@ -3,9 +3,9 @@ import React from 'react';
 const ContactUs = () => {
   const styles = {
     container: {
-      position: 'relative', // For the background image to position content
+      position: 'relative',
       width: '100%',
-      height: '100vh', // Cover the whole screen
+      height: '100vh',
       overflow: 'hidden',
     },
     image: {
@@ -14,14 +14,14 @@ const ContactUs = () => {
       left: 0,
       width: '100%',
       height: '100%',
-      objectFit: 'cover', // Ensure the image covers the screen proportionally
-      zIndex: -1, // Send the image to the background
+      objectFit: 'cover',
+      zIndex: -1,
     },
     overlay: {
       position: 'absolute',
-      bottom: '20px', // Align the content at the bottom
-      left: '20px', // Align content to the left
-      backgroundColor: 'rgba(255, 255, 255, 0.9)', // Semi-transparent background
+      bottom: '20px',
+      left: '20px',
+      backgroundColor: 'rgba(255, 255, 255, 0.9)',
       padding: '20px',
       borderRadius: '10px',
       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -38,7 +38,7 @@ const ContactUs = () => {
     },
     icon: {
       fontSize: '24px',
-      color: '#ff6b00', // Orange color for icons
+      color: '#ff6b00',
     },
     header: {
       fontSize: '18px',
@@ -51,13 +51,12 @@ const ContactUs = () => {
     },
     contactContainer: {
       position: 'absolute',
-      bottom: '20px', // Align the Contact Us section at the bottom
+      bottom: '20px',
       left: '45%',
-      transform: 'translateX(-50%)', // Center the container horizontally
-      backgroundColor: '#f0f0f0', // Light ash color
+      transform: 'translateX(-50%)',
+      backgroundColor: '#f0f0f0',
       padding: '20px',
       borderRadius: '10px',
-      //boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       width: '90%',
       maxWidth: '400px',
     },
@@ -91,12 +90,12 @@ const ContactUs = () => {
       backgroundColor: '#e65a00',
     },
     heading: {
-      position: 'absolute', // Position at top-left corner
+      position: 'absolute',
       top: '60px',
       left: '50px',
       fontSize: '50px',
       fontWeight: 'bold',
-      color: '#808080', // Thick gray color
+      color: '#000', // Changed from gray to black
     },
   };
 
@@ -112,10 +111,10 @@ const ContactUs = () => {
       {/* Top-left Heading */}
       <h1 style={styles.heading}>CONTACT US</h1>
 
-      {/* Overlay Content (Call Us, Location, Business Hours) */}
+      {/* Info Overlay */}
       <div style={styles.overlay}>
         <div style={styles.section}>
-          <i className="bx bxs-phone" style={styles.icon}></i> {/* Box Icon for Call */}
+          <i className="bx bxs-phone" style={styles.icon}></i>
           <div>
             <h2 style={styles.header}>CALL US</h2>
             <p style={styles.text}>(+91)8074072524</p>
@@ -123,15 +122,15 @@ const ContactUs = () => {
         </div>
 
         <div style={styles.section}>
-          <i className="bx bxs-map" style={styles.icon}></i> {/* Box Icon for Location */}
+          <i className="bx bxs-map" style={styles.icon}></i>
           <div>
             <h2 style={styles.header}>LOCATION</h2>
-            <p style={styles.text}>121 Rock Street, 21 Avenue,Hitech City,Hyderabad </p>
+            <p style={styles.text}>121 Rock Street, 21 Avenue, Hitech City, Hyderabad</p>
           </div>
         </div>
 
         <div style={styles.section}>
-          <i className="bx bxs-time-five" style={styles.icon}></i> {/* Box Icon for Business Hours */}
+          <i className="bx bxs-time-five" style={styles.icon}></i>
           <div>
             <h2 style={styles.header}>BUSINESS HOURS</h2>
             <p style={styles.text}>
@@ -142,7 +141,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/* Contact Us Form in Separate Container */}
+      {/* Contact Form */}
       <div style={styles.contactContainer}>
         <h2 style={styles.contactHeader}>CONTACT US</h2>
         <input type="text" placeholder="Enter your Name" style={styles.input} />

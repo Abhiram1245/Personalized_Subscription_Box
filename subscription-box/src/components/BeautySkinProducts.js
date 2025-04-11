@@ -22,33 +22,33 @@ const BeautySkinProducts = ({ addToCart }) => {
     },
     {
       title: "Exfoliating Scrub",
-      description: "Removes dead skin cells.",
+    
       image: "https://images-cdn.ubuy.qa/651a7d9a2337232d0b4d6a05-exfoliating-face-scrub-exfoliating.jpg",
     },
     {
       title: "Vitamin C Serum",
-      description: "Brightens your complexion.",
+    
       image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/shopsy-body-skin-treatment/p/m/d/30-vitamin-c-witch-hazel-hyaluronic-acid-oil-free-face-serum-dot-original-imagmdfazwezw57p.jpeg?q=90&crop=false",
     },
     {
       title: "Soothing Toner",
-      description: "Balances and refreshes skin.",
+
       image: "https://m.media-amazon.com/images/I/718T0OZ-wvL.jpg",
     },
     {
       title: "Moisturizing Lotion",
-      description: "Hydrates and softens skin.",
+     
       image: "https://image.made-in-china.com/226f3j00pThbJIAgLncM/Private-Label-Beauty-Skin-Care-Black-Skin-Whitening-Tumeric-Lotion-Moisturizing-Not-Greasy-Turmeric-Body-Lotion.webp",
     },
     {
       title: "Facial Oil",
-      description: "Rejuvenates dry skin.",
-      image: "https://via.placeholder.com/400?text=Facial+Oil",
+      
+      image: "https://www.olixir.in/cdn/shop/products/1_4aca9474-ea04-48dd-8879-3759e56d3c76.png?v=1679826118&width=1445",
     },
     {
       title: "Luxury Face Cream",
-      description: "Deeply nourishes and restores skin.",
-      image: "https://via.placeholder.com/400?text=Luxury+Face+Cream",
+     
+      image: "https://assets.sebamedusa.com/spree/content_images/259/original/8.18_Free_Shipping_Day__1to1.png?1661360490",
     },
   ];
 
